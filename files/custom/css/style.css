@@ -26,19 +26,27 @@ hr {
 	margin-left: 100px;
 }
 
-#myNav1 button span{
+#myNav1 .bars button{
 	color: #fff;
 }
 @media only screen and (max-width: 992px) {
 
-	#myNav1 .nav1div ul li{
-	margin-left: 0;
-}
+  #myNav1 .nav1div ul li{
+  margin-left: 0;
+  }
 }
 
 .myNav2 {
 	background-color: #33cccc;
 	font-size: 25px;
+}
+
+.myNav2 #icon-3dot{
+  cursor: pointer;
+}
+.myNav2 #cart{
+  color: #660033;
+  font-size:50px;
 }
 .myNav2 a{
 	color: #262626;
@@ -50,18 +58,25 @@ hr {
 
 @media only screen and (max-width: 992px) {
 
-	.myNav2 {
-	background-color: #33cccc;
-	font-size: 20px;
-}
+  	.myNav2 {
+  	background-color: #33cccc;
+  	font-size: 20px;
+  }
 
-.myNav2 a{
-	color: #262626;
-}
+  .myNav2 #cart{
+    color: #660033;
+    font-size:30px;
+  }
+  .myNav2 a{
+  	color: #262626;
+  }
 	  .myNav2 form input{
 	  margin-left: 0;
 	 margin-top: 15px;
 	}
+    .myNav2 form button{
+      padding: 1px;
+    }
 }
 
 .myNav2 form button{
@@ -309,3 +324,75 @@ hr {
     font-weight:600
   }
 }
+
+
+/*extra*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #6600cc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #ffff00;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #009933;
+  padding-left: 8px;
+  transition: 0.6s;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media only screen and (max-height: 480px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*/extra*/
