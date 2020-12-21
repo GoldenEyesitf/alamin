@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap');
 html{
 	padding: 0;
 	margin: 0;
@@ -5,6 +6,7 @@ html{
 }
 body{
 	background: linear-gradient(to right,  #7FFFD4 0%,#b3ffb3 25%,#b3ecff 50%,#ffcce0 75%,#ffd6cc 100%);
+  font-family: 'Zilla Slab', serif;
 }
 hr {
     display: block;
@@ -28,6 +30,8 @@ hr {
 
 #myNav1 .bars button{
 	color: #fff;
+  margin-left: -9px;
+  border:1px solid #ffff00;
 }
 @media only screen and (max-width: 992px) {
 
@@ -37,7 +41,7 @@ hr {
 }
 
 .myNav2 {
-	background-color: #33cccc;
+	background-color: #009999;
 	font-size: 25px;
 }
 
@@ -49,17 +53,14 @@ hr {
   font-size:50px;
 }
 .myNav2 a{
-	color: #262626;
+	color: #000000;
 }
-.myNav2 form input{
- margin-left: 40px;
- margin-top: 15px;
+.myNav2 #search input{
 }
 
 @media only screen and (max-width: 992px) {
 
   	.myNav2 {
-  	background-color: #33cccc;
   	font-size: 20px;
   }
 
@@ -70,13 +71,13 @@ hr {
   .myNav2 a{
   	color: #262626;
   }
-	  .myNav2 form input{
-	  margin-left: 0;
-	 margin-top: 15px;
+	  .myNav2 #search input{
+	  margin-left: -13px;
 	}
-    .myNav2 form button{
-      padding: 1px;
-    }
+  .myNav2 #search{
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }
 
 .myNav2 form button{
@@ -153,7 +154,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
  .container .group .span_1_of_6{
-		 width: 40%;
+		 width: 35%;
 	}
 }
 
@@ -367,12 +368,16 @@ hr {
 
 .sidenav .closebtn {
   position: absolute;
+  color: #ff0000;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: 5px;
+  font-size: 40px;
   margin-left: 50px;
+  border:1px solid #ff0000;
 }
-
+.sidenav .closebtn:hover{
+  background-color: #ff0000;
+}
 #main {
   transition: margin-left .5s;
 }

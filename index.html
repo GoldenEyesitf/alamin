@@ -86,7 +86,7 @@
 	</nav>
 	<!-- /nav1 -->
 	<!-- nav2 -->
-	<nav class="navbar navbar-expand-sm navbar-collapse myNav2">
+	<nav class="navbar navbar-expand-sm navbar-collapse sticky-top myNav2">
 	    <ul class="navbar-nav">
 		    <li class="nav-item">
 		      <a class="nav-link" onclick="openNav()" id="icon-3dot">&#9776; Category<span class="navbar-toggler-icon"></span> </a>
@@ -95,15 +95,19 @@
 		      <a class="nav-link" href="#">Company Name</a>
 		    </li>
 	    </ul>
-	  	<form class="form-inline" action="#">
-		    <input class="form-control mr-sm-2" type="text" size="50" placeholder="Search">
-		    <button class="btn btn-success" type="submit">Search</button>
-		</form>
+	  	<div class="col-md-4">
+			<div class="input-group" id="search">
+			  <input type="text" class="form-control" placeholder="Search ......" aria-label="Recipient's username">
+			  <div class="input-group-append">
+			    <span class="input-group-text"><i class="fa fa-search"></i></span>
+			  </div>
+			</div>
+		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
 		      <a class="nav-link" href="#" id="cart"><i class="fa fa-cart-arrow-down"></i></a>
 		    </li>
-		</ul>	
+		</ul>
 	</nav>
 	<!-- /nav2 -->
 
