@@ -26,6 +26,7 @@ hr {
 
 #myNav1 .nav1div ul li{
 	margin-left: 100px;
+  z-index: 9999 !important;
 }
 
 #myNav1 .bars button{
@@ -41,7 +42,7 @@ hr {
 }
 
 .myNav2 {
-	background-color: #009999;
+	background-color: rgb(33, 44, 149);
 	font-size: 25px;
 }
 
@@ -49,11 +50,11 @@ hr {
   cursor: pointer;
 }
 .myNav2 #cart{
-  color: #660033;
+  color: #ffff00;
   font-size:50px;
 }
 .myNav2 a{
-	color: #000000;
+	color: #fff;
 }
 .myNav2 #search input{
 }
@@ -65,11 +66,11 @@ hr {
   }
 
   .myNav2 #cart{
-    color: #660033;
+    color: #ffff00;
     font-size:30px;
   }
   .myNav2 a{
-  	color: #262626;
+  	color: #fff;
   }
 	  .myNav2 #search input{
 	  margin-left: -13px;
@@ -335,7 +336,7 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  background: #6600cc;
+  background: #2d8659;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 80px;
@@ -385,7 +386,7 @@ hr {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #009933;
+  background-color: #262626;
   padding-left: 8px;
   transition: 0.6s;
 }
